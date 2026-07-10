@@ -72,8 +72,9 @@
   .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.28))}
   .hero h1{
     position:relative;z-index:2;color:#fff;
-    font-size:clamp(48px,8vw,92px);font-weight:400;letter-spacing:1px;
+    font-size:clamp(40px,6vw,72px);font-weight:400;letter-spacing:1px;
     text-shadow:0 2px 24px rgba(0,0,0,.35);
+    margin-bottom:180px;
   }
   .scroll-cue{
     position:absolute;bottom:34px;left:50%;transform:translateX(-50%);z-index:2;
@@ -281,19 +282,22 @@
              <iframe class="aim-map" src="PASTE_ARCGIS_SRC_HERE" frameborder="0" loading="lazy"></iframe> -->
         <a class="aim-map" href="#" aria-label="Aim 1 map">ArcGIS Map</a>
         <div class="aim-text">
-          <h3>Aim 1: Data Pipeline &amp; Range Integration</h3>
-          <p>A reproducible Python pipeline (Shapely) merges, normalizes, and dissolves 20 source GeoJSON datasets with inconsistent schemas into a single analysis-ready feature layer of species ranges.</p>
+          <h3>Aim 1: Percentage of Habitat Burned</h3>
+          <p>The first goal of this project is to quantify the percentage of each endemic reptile and amphibian that has been affected by fires between 1950-1970 and 2020-2025 to compare the effects of increasing fires on herp habitat. We determined that the species name has the largest delta burn percentage of XX%, meaning this species has seen XX% more of its habitat burned in the past 5 years than in the two decades between 1950 and 1970 combined.</p>
         </div>
       </div>
       <div class="aim flip reveal">
-        <a class="aim-map" href="#" aria-label="Aim 2 map">ArcGIS Map</a>
+        <!-- Add script to the <head> of your page to load the embeddable map component -->
+<script type="module" src="https://js.arcgis.com/5.1/embeddable-components/"></script>
+<!-- Add custom element to <body> of your page -->
+ <arcgis-embedded-map style="height:600px;width:700px;" item-id="ddc9b500f7b345ec9ef27750b306fe48" theme="light" legend-enabled time-zone-label-enabled center="-119.75238089577465,37.42131643832121"scale="9244648.868618" portal-url="https://pumagic.maps.arcgis.com"></arcgis-embedded-map>
         <div class="aim-text">
-          <h3>Aim 2: Quantifying Fire Exposure</h3>
+          <h3>Aim 2: Endemic Herp Hotspots</h3>
           <p>Geodetic range and burned-area metrics computed with Arcade quantify the proportion of each species' range affected by fire over 5- and 10-year windows, revealing which endemics face the greatest recent exposure.</p>
         </div>
       </div>
       <div class="aim reveal">
-        <a class="aim-map" href="#" aria-label="Aim 3 map">ArcGIS Map</a>
+        <!-- Add script to the <head> of your page to load the embeddable map component --><script type="module" src="https://js.arcgis.com/5.1/embeddable-components/"></script><!-- Add custom element to <body> of your page --> <arcgis-embedded-map style="height:600px;width:700px;" item-id="1737dd7a37454b97a5572752926af06e" theme="light" legend-enabled time-zone-label-enabled center="-119.93734027623243,36.45920773411092"scale="4622324.434309" portal-url="https://pumagic.maps.arcgis.com"></arcgis-embedded-map>
         <div class="aim-text">
           <h3>Aim 3: Prioritizing Conservation</h3>
           <p>A species-richness surface via hexagonal tessellation and spatial joins identifies biodiversity hotspots, classified into restoration priorities (recently burned) and fire-regime-evaluation priorities (long-unburned), published as an interactive web map and dashboard.</p>
@@ -346,8 +350,8 @@
       </div>
       <div>
         <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="www.linkedin.com/in/qwahnkent" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/YoungPluto" target="_blank" rel="noopener">GitHub</a>
       </div>
       <div>
         <a href="mailto:qk6999@princeton.edu" id="contactlink">Contact Me</a>
