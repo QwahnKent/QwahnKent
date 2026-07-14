@@ -280,7 +280,10 @@
       <div class="aim reveal">
         <!-- To embed: replace the <a> line below with your ArcGIS iframe, e.g.
              <iframe class="aim-map" src="PASTE_ARCGIS_SRC_HERE" frameborder="0" loading="lazy"></iframe> -->
-        <a class="aim-map" href="#" aria-label="Aim 1 map">ArcGIS Map</a>
+        <!-- Add script to the <head> of your page to load the embeddable map component -->
+<script type="module" src="https://js.arcgis.com/5.1/embeddable-components/"></script>
+<!-- Add custom element to <body> of your page -->
+ <arcgis-embedded-map class="aim-map" item-id="e1b457ba17d74145b088c1235c2c9844" theme="light" time-zone-label-enabled center="-119.75001183175993,37.42150214616084"scale="9244648.868618" portal-url="https://pumagic.maps.arcgis.com"></arcgis-embedded-map>
         <div class="aim-text">
           <h3>Aim 1: Percentage of Habitat Burned</h3>
           <p>The first goal of this project is to quantify the percentage of each endemic reptile and amphibian that has been affected by fires between 1950-1970 and 2020-2025 to compare the effects of increasing fires on herp habitat. We determined that the species name has the largest delta burn percentage of XX%, meaning this species has seen XX% more of its habitat burned in the past 5 years than in the two decades between 1950 and 1970 combined.</p>
@@ -290,7 +293,7 @@
         <!-- Add script to the <head> of your page to load the embeddable map component -->
 <script type="module" src="https://js.arcgis.com/5.1/embeddable-components/"></script>
 <!-- Add custom element to <body> of your page -->
- <arcgis-embedded-map style="height:600px;width:700px;" item-id="ddc9b500f7b345ec9ef27750b306fe48" theme="light" legend-enabled time-zone-label-enabled center="-119.75238089577465,37.42131643832121"scale="9244648.868618" portal-url="https://pumagic.maps.arcgis.com"></arcgis-embedded-map>
+ <arcgis-embedded-map class="aim-map" item-id="ddc9b500f7b345ec9ef27750b306fe48" theme="light" legend-enabled time-zone-label-enabled center="-119.75238089577465,37.42131643832121"scale="9244648.868618" portal-url="https://pumagic.maps.arcgis.com"></arcgis-embedded-map>
         <div class="aim-text">
           <h3>Aim 2: Endemic Herp Hotspots</h3>
           <p>Geodetic range and burned-area metrics computed with Arcade quantify the proportion of each species' range affected by fire over 5- and 10-year windows, revealing which endemics face the greatest recent exposure.</p>
